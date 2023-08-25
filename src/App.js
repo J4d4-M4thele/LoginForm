@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-
 import "./styles.css";
 
 function App() {
-  // React States
+  // initial states are declared (empty object and falseboolean- not submitting)
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -19,7 +18,7 @@ function App() {
       password: "pass2"
     }
   ];
-
+  //error messaging
   const errors = {
     uname: "invalid username",
     pass: "invalid password"
